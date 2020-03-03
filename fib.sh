@@ -4,21 +4,39 @@ echo "Enter the limit: "
 read n
 a=0
 b=1
-echo -n "$a $b "
+i=2
 
-for ((i=2;i<n;i++))
+echo ""
+echo $a
+echo $b
+
+while [ $i -lt $n ]
 do
-	temp=$((a+b))
-	echo -n "$temp\b "
+	i=`expr $i + 1 `
+	temp=`expr $a + $b `
+	echo "$temp"
 	a=$b
 	b=$temp
 done
-echo ""
+
 
 : '				OUTPUT
-Enter number of series of fibbonacci
+Enter the limit: 
+3
+
+0
+1
+1
+
+Enter the limit: 
 8
-0 1 1 2 3 5 8 13 
-Enter number of series of fibbonacci
-10
-0 1 1 2 3 5 8 13 21 34'
+
+0
+1
+1
+2
+3
+5
+8
+13
+'
