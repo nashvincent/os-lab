@@ -15,13 +15,10 @@ else
 fi
 
 : '				OUTPUT
-Enter number to find factorial
-6
-factorial of 6 is 720
-Enter number to find factorial
+Input a number: 
+3
+The factorial of 3 is 6
+Input a number: 
 5
-fcatorial of 5 is 120
-Enter number to find factorial
-0
-1
+The factorial of 5 is 120
 '
