@@ -12,8 +12,8 @@ echo $b
 
 while [ $i -lt $n ]
 do
-	i=`expr $i + 1 `
-	temp=`expr $a + $b `
+	i=$((i+1))
+	temp=$((a+b))
 	echo "$temp"
 	a=$b
 	b=$temp
