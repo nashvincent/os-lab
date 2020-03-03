@@ -10,18 +10,18 @@ do
 	reverse="$reverse${string:$i:1}"
 done
 
-if [ "$string" == "$rev" ]
+if [ "$string" == "$reverse" ]
 then
-	echo "$string is palindrome"
+	echo "It is a palindrome"
 else
-	echo "$string is not palindrome"
+	echo "It is not a palindrome"
 fi
 
 : '				OUTPUT
-Enter the string : 
-lol
-lol is palindrome
-Enter the string : 
-afsan
-afsan is not palindrome
+Enter the string: 
+malayalam
+It is a palindrome
+Enter the string: 
+cat
+It is not a palindrome
 '
